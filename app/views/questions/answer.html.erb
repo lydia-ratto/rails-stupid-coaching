@@ -1,4 +1,8 @@
-
-<%= @answer %>
-
-<%= link_to "Ask a new question", ask_path%>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+<ul class="list-group">
+  <li class="list-group-item"><%= params[:question] %></li>
+  <li class="list-group-item"><%= @answer %></li>
+  <li class="list-group-item"><%= link_to "Ask a new question", ask_path%></li>
+</ul>
+</div>
